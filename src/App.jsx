@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./app.scss";
+import img from "../assets/download.jpeg";
 export const App = ({ message }) => {
   const [todos, modifyTodo] = useState(["ds", "sasdsnss", "dsansjd"]);
   const DeleteTodo = id => {
@@ -13,6 +14,7 @@ export const App = ({ message }) => {
           {i}
         </p>
       ))}
+      <img src={img} alt="" srcset="" />
     </div>
   );
 };
