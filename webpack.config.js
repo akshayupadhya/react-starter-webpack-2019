@@ -10,6 +10,7 @@ module.exports = {
   },
   mode: process.env.NODE_ENV || "development",
   resolve: {
+    extensions: ["sass", "css", "js", "jsx", "png", "gif", "jpeg", "jpg"],
     modules: [path.resolve(__dirname, "src"), "node_modules"]
   },
   devServer: {
